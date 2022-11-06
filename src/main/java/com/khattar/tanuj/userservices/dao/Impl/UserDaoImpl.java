@@ -69,7 +69,7 @@ public class UserDaoImpl implements UserDao {
     @Override
     public LoginResponse loginUser(LoginRequest request) {
         LoginResponse response = new LoginResponse();
-        response.setReason("Something went wrong, please try again");
+        response.setReason("Something went wrong, please try again.");
         for(User value : userDatabase.values()){
 
             if (value.getEmail().equalsIgnoreCase(request.getEmail()) ){
